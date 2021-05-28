@@ -7,14 +7,14 @@ public class Department {
 
     private int departmentId;
     private String departmentName;
-    private Employee departmentHead;
-    private List<Employee> departmentEmployees = new ArrayList<>();
+    private com.techelevator.hr.Employee departmentHead;
+    private List<com.techelevator.hr.Employee> departmentEmployees = new ArrayList<>();
 
     public Department(String departmentName) {
         this.departmentName = departmentName;
     }
 
-    public void transferEmployeeIn(Employee employee) {
+    public void transferEmployeeIn(com.techelevator.hr.Employee employee) {
         employee.getDepartment().getDepartmentEmployees().remove(employee);
         employee.setDepartment(this);
         this.departmentEmployees.add(employee);

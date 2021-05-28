@@ -6,7 +6,7 @@ public class Employee extends Person {
 
     private int employeeId;
     private String title;
-    private Department department;
+    private com.techelevator.hr.Department department;
     private double salary;
 
     public Employee(String firstName, String lastName) {
@@ -49,11 +49,11 @@ public class Employee extends Person {
         this.title = title;
     }
 
-    public Department getDepartment() {
+    public com.techelevator.hr.Department getDepartment() {
         return department;
     }
 
-    public void setDepartment(Department department) {
+    public void setDepartment(com.techelevator.hr.Department department) {
         this.department = department;
     }
 
